@@ -1,0 +1,37 @@
+
+    <nav class="navbar nav-expand-lg nav-light" style="background-color:#3366cc;">
+        <ul style="color:white" routerLink="/moveToAdmin"> <img src="https://i.pinimg.com/originals/e6/8e/f9/e68ef99d235226806e906cc6fbc685fe.jpg"></ul>
+        <ul class="nav-bar nav" id="left" >
+            <li class="nav-item"><a class="nav-link"  routerLink="/moveToCategory" style="color:red;">LogOut</a></li>
+
+        </ul>
+    </nav> 
+
+
+<div class="container">
+    
+    <form class="ngForm" (ngSubmit) ="onSubmit()">
+      
+  
+      <label ><b>Policy Name</b></label>
+      <input type="text"  name="policyname"  [(ngModel)] ="healthPolicy.policyname">
+  
+      <label ><b>Sum Assurance</b></label>
+      <input type="number"  name="sumassurance" [(ngModel)] ="healthPolicy.sumassurance">
+  
+      <label ><b>Monthly Pay</b></label>
+      <input type="number"  name="monthleypay"  [(ngModel)] ="healthPolicy.monthleypay">
+  
+      <label ><b>No Of Months</b></label>
+      <input type="number"  name="noofmonths"  [(ngModel)] ="healthPolicy.noofmonths">
+  
+      <label ><b>Diseases Covered</b></label>
+      <input type="text"  name="diseasescovered"  [(ngModel)] ="healthPolicy.diseasescovered">
+  
+      <label ><b>Hospitals</b></label>
+      <input type="text"  name="hospitals"  [(ngModel)] ="healthPolicy.hospitals">
+  
+      <button type="submit" class="btn">Update</button>
+    </form>
+ 
+</div>

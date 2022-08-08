@@ -1,0 +1,48 @@
+
+    <nav class="navbar nav-expand-lg nav-light" style="background-color:#3366cc;" >
+    
+        <ul style="color:white" routerLink=""> <img src="assets/Images/homeHealth.jpeg"></ul>
+
+        <ul class="nav-bar nav" id="left" >
+           
+            <li class="nav-item"><a class="nav-link" routerLink="/moveToCategory" style="color:white">Browse Policies</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" routerLink="/moveToLoginPage" style="color:white">LogOut</a></li> -->
+            
+        </ul>
+
+    </nav>  
+
+
+
+<!-- 
+<body>
+    <form class="ngForm" (ngSubmit) ="validate()">
+   <label> <b>User Name</b> </label> <br>
+       <input type="text" name="username" [(ngModel)] ="username">    
+       <br>
+       <label> <b>Password</b> </label> <br>
+       <input type="password"  name="password" [(ngModel)] ="password">    
+       <br>   
+       <br><br>  
+       <button type="submit" class="btn btn-secondary" >LogIn</button>
+   </form>
+   </body> -->
+
+
+   <body >
+    <div class="container">
+    
+      <form class="ngForm" (ngSubmit) ="validate()">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email"  [(ngModel)] ="email">
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" [(ngModel)] ="password">
+    
+        <button type="submit" class="btn">Login</button>
+      </form>
+   
+</div>
+    </body>

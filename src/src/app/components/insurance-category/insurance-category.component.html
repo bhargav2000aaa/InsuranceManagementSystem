@@ -1,0 +1,49 @@
+<nav class="navbar nav-expand-lg nav-light" style="background-color:#3366cc;">
+     <ul style="color:white" routerLink=""> <img class="image1" src="https://i.pinimg.com/originals/e6/8e/f9/e68ef99d235226806e906cc6fbc685fe.jpg"></ul>
+     
+    <ul class="nav-bar nav" id="left" >
+        <li class="nav-item"><a class="nav-link"  routerLink="/moveToCategory" style="color:white">Browse Policies</a></li>
+        <li class="nav-item"> <a class="nav-link" routerLink="/moveToLoginPage" style="color:white">Admin Login</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/moveToLoginPage" style="color:white">User Login</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/moveToAddUser"  style="color:white">Create Account</a></li>
+    </ul>
+</nav>  
+<!-- 
+<body>         
+    <div class="home-page">
+    
+        <div id="logo">
+             <p>Welcome To Home Page</p> -->
+           <!-- </div>
+    
+           <br><br>  
+           <div class="form">
+            <button type="button" class="btn btn-secondary" style="background-color:#3366cc;" (click)="moveToHealthInsurancePolicies()">Health Insurance Policies</button>
+           <br><br>
+            <button type="button" class="btn btn-secondary" style="background-color:#3366cc;" (click)="moveToHomeInsurancePolicies()">Home Insurance Policies</button>
+          
+            </div>
+    </div> 
+    </body>              -->
+   <body class="container"> 
+<div class="row">
+    <div class="col">
+        <div class="card"  style="width: 18rem;">
+            <img  src="assets\Images\HealthPolicyPic.jpeg" class="card-img-top" alt="...">
+            <div class="card-body" style="background-color:#5c85d6" (click)="moveToHealthInsurancePolicies()">
+              <h5 class="card-title">Health Insurance Policies</h5>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card"  style="width: 18rem;">
+            <img  src="assets\Images\HomePolicyPic.jpeg" class="card-img-top" alt="...">
+            <div class="card-body" style="background-color:#5c85d6" (click)="moveToHomeInsurancePolicies()">
+              <h5 class="card-title">Home Insurance Policies</h5>
+            </div>
+          </div> 
+    </div>
+</div>
+    
+</body>
+      

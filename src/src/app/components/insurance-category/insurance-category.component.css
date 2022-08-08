@@ -1,0 +1,45 @@
+
+body{
+	text-align:center;	
+	background-color:white;
+	margin-top: 5%;
+
+}
+.home-page {
+	width: 40%;
+	padding: 2% 0 0;
+	margin: auto;
+    padding:45px ;
+	font-size: 20px;
+}
+
+.form{
+	position:static;
+	z-index: 1;
+	background: #fffefe;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	border-radius: 10px;
+   
+}
+p{
+	color: #0b0b0b;
+}
+.btn:hover{
+    background-color: rgb(121, 93, 93);
+}
+.btn{
+    margin-left: 6px;
+}
+.image1{
+    border-radius: 10%;
+    height: 30px;
+    width: auto;
+  }
+body{
+margin-left: 15%;
+ }
+.card{
+	min-height: 200px;
+}

@@ -1,0 +1,62 @@
+
+<nav class="navbar nav-expand-lg nav-light" style="background-color:#3366cc;" >
+    
+    <ul style="color:white" routerLink=""> <img src="https://i.pinimg.com/originals/e6/8e/f9/e68ef99d235226806e906cc6fbc685fe.jpg"></ul>
+       
+
+    <ul class="nav-bar nav" id="left" >
+        
+        <li class="nav-item"><a class="nav-link" routerLink="/moveToCategory" style="color:white">Browse Policies</a></li>
+        <li class="nav-item"> <a class="nav-link" routerLink="/moveToLoginPage" style="color:white">Admin Login</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/moveToLoginPage" data-bs-target="#loginForm" style="color:white">User Login</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" routerLink="" style="color:rgb(131, 172, 69)">Log Out</a></li> -->
+        
+    </ul>
+
+</nav>  
+
+
+<body>
+    <!-- <form class="ngForm" (ngSubmit) ="onSubmit()">
+   <label> <b>Name</b> </label> <br>
+       <input type="text" name="name" [(ngModel)] ="user.name">    
+       <br>   
+       <label> <b>Email</b> </label> <br>
+       <input type="text"  name="email" [(ngModel)] ="user.email">    
+       <br> 
+       <label> <b>Mobile Number</b> </label> <br>
+       <input type="number"  name="mobilenumber" [(ngModel)] ="user.mobilenumber">    
+       <br> 
+       <label> <b>Password</b> </label> <br>
+       <input type="password"  name="password" [(ngModel)] ="user.password">    
+       <br> 
+       <label> <b>Address</b> </label> <br>
+       <input type="text"  name="address" [(ngModel)] ="user.address">  
+       <br><br>  
+       <button type="submit" class="btn btn-secondary" >Sign Up</button>
+   </form> -->
+   <div class="container">
+    <form class="ngForm" (ngSubmit) ="onSubmit()">
+      <h1>Sign Up</h1>
+  
+      <label ><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" [(ngModel)] ="user.name">
+  
+      <label ><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" [(ngModel)] ="user.email">
+        
+      <label ><b>Mobile Number</b></label>
+      <input type="number" placeholder="Enter phonenumber" name="mobilenumber" [(ngModel)] ="user.mobilenumber">
+  
+      <label ><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" [(ngModel)] ="user.password">
+  
+      <label ><b>Address</b></label>
+      <input type="text" placeholder="Enter Address" name="address" [(ngModel)] ="user.address">
+  
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+ 
+</div>
+
+   </body>

@@ -1,0 +1,41 @@
+    <nav class="navbar nav-expand-lg nav-light" style="background-color:#3366cc;">
+        <ul style="color:white" routerLink="/moveToAdmin"> <img src="https://i.pinimg.com/originals/e6/8e/f9/e68ef99d235226806e906cc6fbc685fe.jpg"></ul>
+        <ul class="nav-bar nav" id="left" >
+            <li class="nav-item"><a class="nav-link"  routerLink="/moveToCategory" style="color:red;">LogOut</a></li>
+
+        </ul>
+    </nav> 
+
+
+<div class="container">
+    
+    <form class="ngForm" (ngSubmit) ="onSubmit()">
+      
+  
+      <label ><b>Policy Name</b></label>
+      <input type="text"  name="policyname"  [(ngModel)] ="homePolicy.policyname">
+  
+      <label ><b>City</b></label>
+      <input type="text"  name="city" [(ngModel)] ="homePolicy.city">
+  
+      <label ><b>Area Name</b></label>
+      <input type="text"  name="areaname"  [(ngModel)] ="homePolicy.areaname">
+  
+      <label ><b>Monthly Premium</b></label>
+      <input type="number"  name="monthleypremium"  [(ngModel)] ="homePolicy.monthleypremium">
+  
+      <label ><b>Sum Assurance</b></label>
+      <input type="number"  name="sumassurance"  [(ngModel)] ="homePolicy.sumassurance">
+  
+      <label ><b>No Of Months</b></label>
+      <input type="number"  name="noofmonths"  [(ngModel)] ="homePolicy.time">
+       
+      <label ><b>Category id</b></label>
+      <input type="number"  name="categoryid"  [(ngModel)] ="homePolicy.categoryid">
+  
+
+      <button type="submit" class="btn">Update</button>
+    </form>
+ 
+</div>
+

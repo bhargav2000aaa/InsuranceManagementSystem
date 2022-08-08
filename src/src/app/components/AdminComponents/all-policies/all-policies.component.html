@@ -1,0 +1,70 @@
+<nav class="navbar nav-expand-lg nav-light" style="background-color:#3366cc;">
+    <ul style="color:white" routerLink="/moveToAdmin"> <img src="https://i.pinimg.com/originals/e6/8e/f9/e68ef99d235226806e906cc6fbc685fe.jpg"></ul>
+    <ul class="nav-bar nav" id="left" >
+        <li class="nav-item"><a class="nav-link"  routerLink="" style="color:rgb(241, 236, 236)">LogOut</a></li>
+    </ul>
+</nav>  
+
+<table class="container" id="beauty" style="width: 100%;">
+    <h5>Health Policies</h5>
+    <button type="button" class="btn btn-secondary"  (click)="addNewHealthPolicy()">Add New Health Policy</button>
+    <tr>
+        <th>Policy No</th>
+        <th>Policy Name</th>
+        <!-- <th>Sum Assurance</th>
+        <th>Monthly Pay</th> 
+        <th>No Of Months</th>
+        <th>Illness Covered</th>
+        <th>Hospitals</th> -->
+        <th>Actions</th>
+    </tr>
+<tr *ngFor="let list of healthPoliciesList">
+        <td>{{list.id}}</td>
+         <td>{{list.policyname}}</td>
+        <!-- <td>{{list.sumassurance}}</td>
+        <td>{{list.monthleypay}}</td>
+        <td>{{list.noofmonths}}</td>
+        <td>{{list.diseasescovered}}</td> -->
+        <!-- <td>{{list.hospitals}}</td> -->
+        <td>
+            <button type="submit" class="btn btn-sm btn-info" (click) ="editHealthPolicy(list.id)">Edit</button>
+            &nbsp;&nbsp;
+            <button type="submit" class="btn btn-sm btn-info" style="color: red;" (click) ="deleteHealthPolicy(list.id)">Delete</button>
+        </td>
+        
+    </tr>
+    
+</table>
+
+
+<table class="container" id="beauty" style="width: 100%;">
+    <h5>Home Policies</h5>  <button type="button" class="btn btn-secondary" (click)="addNewHomePolicy()">Add New Home Policy</button>
+
+    <tr>
+        <th>Policy No</th>
+        <th>Policy Name</th>
+        <!-- <th>City</th>
+        <th>Areas Covered</th>
+        <th>SumAssurance</th>
+        <th>Monthly Pay</th>
+        <th>No Of Months</th> -->
+        <th>Actions</th>
+    </tr>
+<tr *ngFor="let list of homePoliciesList">
+        <td>{{list.id}}</td>
+        <td>{{list.policyname}}</td>
+        <!-- <td>{{list.city}}</td>
+        <td>{{list.areaname}}</td>
+        <td>{{list.sumassurance}}</td>
+        <td>{{list.monthleypremium}}</td>
+        <td>{{list.time}}</td> -->
+        <td>
+            <button type="submit" class="btn btn-sm btn-info" (click) ="editHomePolicy(list.id)">Edit</button>
+            &nbsp;&nbsp;
+            <button type="submit" class="btn btn-sm btn-info" style="color: red;" (click) ="deleteHomePolicy(list.id)">Delete</button>
+        </td>
+        
+    </tr>
+    
+</table>
+

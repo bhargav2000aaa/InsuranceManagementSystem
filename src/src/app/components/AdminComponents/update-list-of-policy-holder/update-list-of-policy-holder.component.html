@@ -1,0 +1,52 @@
+<nav class="navbar nav-expand-lg nav-light" style="background-color:#3366cc;">
+    <ul style="color:white" routerLink=""> <img src="https://i.pinimg.com/originals/e6/8e/f9/e68ef99d235226806e906cc6fbc685fe.jpg"></ul>
+    <ul class="nav-bar nav" id="left" >
+        <li class="nav-item"><a class="nav-link"  routerLink="/moveToCategory" style="color:red;">LogOut</a></li>
+
+    </ul>
+</nav> 
+
+
+<div class="container">
+
+<form class="ngForm" (ngSubmit) ="onSubmit()">
+  
+
+  <label ><b>Name</b></label>
+  <input type="text"  name="name"  [(ngModel)] ="policyHolder.name">
+
+  <label ><b>Email</b></label>
+  <input type="text"  name="email" [(ngModel)] ="policyHolder.email">
+
+  <label ><b>Mobile Number</b></label>
+  <input type="number"  name="mobilenumber"  [(ngModel)] ="policyHolder.mobilenumber">
+
+  <label ><b>Password</b></label>
+  <input type="password"  name="noofmonths"  [(ngModel)] ="policyHolder.password">
+
+  <label ><b>Address</b></label>
+  <input type="text"  name="address"  [(ngModel)] ="policyHolder.address">
+
+  <label ><b>Health Id</b></label>
+  <input type="number"  name="healthid"  [(ngModel)] ="policyHolder.healthid">
+
+  <label ><b>Home Id</b></label>
+  <input type="number"  name="homeid"  [(ngModel)] ="policyHolder.homeid">
+ 
+  <label ><b>Health Premium Left</b></label>
+  <input type="number"  name="healthpremiumleft"  [(ngModel)] ="policyHolder.healthpremiumleft">
+
+  <label ><b>Home Premium Left</b></label>
+  <input type="number"  name="homepremiumleft"  [(ngModel)] ="policyHolder.homepremiumleft">
+
+  <label ><b>Health Status</b></label>
+  <input type="number"  name="status"  [(ngModel)] ="policyHolder.healthstatus">
+
+  <label ><b>Home Status</b></label>
+  <input type="number"  name="status"  [(ngModel)] ="policyHolder.homestatus">
+
+
+  <button type="submit" class="btn">Update</button>
+</form>
+
+</div>

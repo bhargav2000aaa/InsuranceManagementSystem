@@ -1,0 +1,19 @@
+
+.card{
+    display: inline-block;
+}
+.image1{
+    border-radius: 10%;
+    height: 30px;
+    width: auto;
+  }
+ 
+  body{
+    text-align: center;
+    /* background-color: aqua; */
+  }
+  /* div{
+    width:auto;
+    height:50%;
+    float:left;
+  } */
